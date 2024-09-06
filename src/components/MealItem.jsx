@@ -6,13 +6,14 @@ import CartContext from '../store/CartContext';
 
 function MealItem({ meal }) {
   const cartCtx = useContext(CartContext);
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
   function handleAddMealToCart() {
     cartCtx.addItem(meal);
   }
   return (
     <li className="meal-item">
       <article>
-        <img src={`${VITE_BACKEND_URL}/${meal.image}`} alt={meal.name} />
+        <img src={`${backendUrl}/${meal.image}`} alt={meal.name} />
         <div>
           <h3>{meal.name}</h3>
           <p className="meal-item-price">
