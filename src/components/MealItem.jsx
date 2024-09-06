@@ -12,7 +12,7 @@ function MealItem({ meal }) {
   return (
     <li className="meal-item">
       <article>
-        <img src={`{${VITE_BACKEND_URL}/${meal.image}`} alt={meal.name} />
+        <img src={`${VITE_BACKEND_URL}/${meal.image}`} alt={meal.name} />
         <div>
           <h3>{meal.name}</h3>
           <p className="meal-item-price">
