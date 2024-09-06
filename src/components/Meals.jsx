@@ -3,11 +3,11 @@ import MealItem from './MealItem';
 
 export default function Meals() {
   const [loadedMeals, setLoadedMeals] = useState([]);
-
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
   useEffect(() => {
     async function fetchMeals() {
-      const response = await fetch(process.env.REACT_APP_BACKEND_URL);
-
+      const response = await fetch(backendUrl);
+      // console.log(backendUrl);
       if (!response.ok) {
         // ...
       }
