@@ -6,14 +6,18 @@ export default function Meals() {
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
   useEffect(() => {
     async function fetchMeals() {
-      const response = await fetch(backendUrl);
-      // console.log(backendUrl);
-      if (!response.ok) {
-        // ...
-      }
+      try {
+        const response = await fetch(backendUrl);
+        // console.log(backendUrl);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
 
-      const meals = await response.json();
-      setLoadedMeals(meals);
+        const meals = await response.json();
+        setLoadedMeals(meals);
+      } catch (error) {
+        console.error('Error fetching meals:', error);
+      }
     }
 
     fetchMeals();
