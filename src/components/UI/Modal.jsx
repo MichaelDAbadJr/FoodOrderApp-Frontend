@@ -11,7 +11,7 @@ export default function Modal({children, open, className=''}) {
         }
 
         return () => modal.close();
-    }, [])
+    }, [open])
 
   return createPortal(
     <dialog ref={dialogRef} className={`modal ${className}`}>{children}</dialog>,

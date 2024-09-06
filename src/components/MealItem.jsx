@@ -6,7 +6,7 @@ import CartContext from '../store/CartContext';
 
 function MealItem({ meal }) {
   const cartCtx = useContext(CartContext);
-  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const backendUrl = import.meta.env.VITE_BACKEND_URL_ASSETS;
   function handleAddMealToCart() {
     cartCtx.addItem(meal);
   }
