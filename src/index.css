@@ -248,6 +248,32 @@ h1 {
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.55);
 }
+/* Error class */
+.error {
+  background-color: #ffe6e6; /* Light red background */
+  color: #d8000c; /* Dark red text */
+  border: 1px solid #d8000c; /* Dark red border */
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto; /* Center the box horizontally */
+  text-align: center; /* Center the text inside the box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+}
+
+/* Center class */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height to center vertically */
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffc404; /* Change text color to yellow for better visibility */
+  background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background to improve contrast */
+  padding: 1rem;
+  border-radius: 8px;
+}
 
 @keyframes fade-slide-up {
   from {
