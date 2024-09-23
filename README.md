@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a React-based food ordering app where users can view available meals, add them to their cart, and proceed to checkout. The app is built using a combination of React context for managing cart and user progress state, hooks for HTTP requests, and external APIs for fetching and posting order data. The frontend is designed to integrate seamlessly with a backend that processes orders and manages meals data.
+This is a React-based food ordering app where users can view available meals, add them to their cart, and proceed to checkout. The app utilizes React context for managing cart and user progress state, hooks for HTTP requests, and integrates external APIs for fetching and posting order data. The frontend is designed to seamlessly connect with a backend that processes orders and manages meals data.
 
 <a href="https://junmike-food-order.netlify.app/" target="_blank">View Live Website</a>
 </br>
@@ -16,9 +16,9 @@ link to the backend repository -->
 - **Meal Selection:** Users can browse a variety of meal options and add them to their cart with just a click.
 - **Cart Management:** Includes dynamic cart functionality where users can add, remove, and update item quantities in real-time.
 - **Checkout Process:** Secure checkout flow allowing users to input their details and place an order seamlessly.
-- **Order Submission:** Sends orders to the backend, confirming the order and displaying a success message upon completion.
+- **Order Submission:** Orders are sent to the backend, confirming the order and displaying a success message upon completion.
 - **Error Handling:** Robust management of loading states and error messages during API calls for better user feedback.
-- **Data Fetching:** Fetches meals and other data from a backend API, with loading indicators to enhance the user experience.
+- **Data Fetching:**  Meals and other data are fetched from a backend API, with loading indicators to improve user experience.
 
 ## Getting Started
 
